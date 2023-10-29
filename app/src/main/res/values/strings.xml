@@ -2,9 +2,10 @@
     <string name="app_name">SplitTheBill</string>
     <string name="nome">Nome</string>
     <string name="pagou">0.00</string>
-    <string name="comprou">Itens que comprou</string>
     <string name="salvar">Salvar</string>
     <string name="remover_integrante">Remover integrante</string>
     <string name="editar_integrante">Editar integrante</string>
     <string name="adicionar_integrante">Adicionar integrante</string>
+    <string name="rachar_conta">Rachar conta</string>
+    <string name="comprou">Itens\nque\ncomprou</string>
 </resources>
