@@ -13,5 +13,10 @@ data class Integrante(
     @NonNull
     var nome: String,
     var pagou: Double,
-    var comprou: String,
+    var descricaoItem1: String,
+    var valorItem1: Double,
+    var descricaoItem2: String,
+    var valorItem2: Double,
+    var descricaoItem3: String,
+    var valorItem3: Double,
 ): Parcelable

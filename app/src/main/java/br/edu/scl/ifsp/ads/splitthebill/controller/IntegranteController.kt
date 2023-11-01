@@ -1,6 +1,5 @@
 package br.edu.scl.ifsp.ads.splitthebill.controller
 
-import android.os.AsyncTask
 import androidx.room.Room
 import br.edu.scl.ifsp.ads.splitthebill.model.Integrante
 import br.edu.scl.ifsp.ads.splitthebill.model.IntegranteDao

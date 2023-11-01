@@ -12,7 +12,6 @@ interface IntegranteDao {
         const val INTEGRANTE_DATABASE_FILE = "integrantes_room"
         private const val INTEGRANTE_TABLE = "integrante"
         private const val ID_COLUMN = "id"
-        private const val NOME_COLUMN = "nome"
     }
 
     @Insert

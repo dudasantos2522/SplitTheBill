@@ -28,26 +28,70 @@
         app:layout_constraintTop_toBottomOf="@id/toolbarIn" />
 
     <EditText
-        android:id="@+id/pagouEt"
+        android:id="@+id/descricaoItem1Et"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:inputType="numberDecimal"
-        android:text="@string/pagou"
+        android:inputType="textMultiLine"
+        android:hint="@string/item_1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/nomeEt" />
 
     <EditText
-        android:id="@+id/comprouEt"
+        android:id="@+id/valorItem1Et"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:hint="@string/pagou"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/descricaoItem1Et" />
+
+    <EditText
+        android:id="@+id/descricaoItem2Et"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="textMultiLine"
-        android:hint="@string/comprou"
+        android:hint="@string/item_2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/pagouEt" />
+        app:layout_constraintTop_toBottomOf="@+id/valorItem1Et" />
+
+    <EditText
+        android:id="@+id/valorItem2Et"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:hint="@string/pagou"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/descricaoItem2Et" />
+
+    <EditText
+        android:id="@+id/descricaoItem3Et"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        android:hint="@string/item_3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/valorItem2Et" />
+
+    <EditText
+        android:id="@+id/valorItem3Et"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:hint="@string/pagou"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/descricaoItem3Et" />
 
     <Button
         android:id="@+id/salvarBt"
@@ -56,6 +100,6 @@
         android:text="@string/salvar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/comprouEt" />
+        app:layout_constraintTop_toBottomOf="@+id/valorItem3Et" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

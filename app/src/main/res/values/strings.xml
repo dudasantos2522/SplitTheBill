@@ -8,4 +8,7 @@
     <string name="adicionar_integrante">Adicionar integrante</string>
     <string name="rachar_conta">Rachar conta</string>
     <string name="comprou">Itens\nque\ncomprou</string>
+    <string name="item_1">Item 1</string>
+    <string name="item_2">Item 2</string>
+    <string name="item_3">Item 3</string>
 </resources>

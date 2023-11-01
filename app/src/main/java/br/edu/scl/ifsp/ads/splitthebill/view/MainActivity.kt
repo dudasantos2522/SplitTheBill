@@ -7,7 +7,6 @@ import android.view.ContextMenu
 import android.view.Menu
 import android.view.MenuItem
 import android.view.View
-import android.widget.AdapterView
 import android.widget.AdapterView.AdapterContextMenuInfo
 import android.widget.Toast
 import androidx.activity.result.ActivityResultLauncher
@@ -97,7 +96,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     override fun onContextItemSelected(item: MenuItem): Boolean {
-        val position = (item.menuInfo as AdapterView.AdapterContextMenuInfo).position
+        val position = (item.menuInfo as AdapterContextMenuInfo).position
         val integrante = integranteList[position]
         return when (item.itemId) {
             R.id.removeIntegranteMi -> {
