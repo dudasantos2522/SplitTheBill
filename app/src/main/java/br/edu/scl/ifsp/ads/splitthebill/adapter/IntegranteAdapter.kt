@@ -27,20 +27,41 @@ class IntegranteAdapter(context: Context, private val integranteList: MutableLis
             )
             integranteTileView = tib.root
 
-            val tileIntegranteHolder = TileIntegranteHolder(tib.nomeTv, tib.pagouTv)
+            val tileIntegranteHolder = TileIntegranteHolder(tib.nomeTv, tib.pagouTv, tib.itensCompradosTv)
             integranteTileView.tag = tileIntegranteHolder
         }
         val holder = integranteTileView.tag as TileIntegranteHolder
         holder.nomeTv.setText(integrante.nome)
         holder.pagouTv.setText(integrante.pagou.toString())
 
+        var itensComprados = ""
+        if (integrante.descricaoItem1 != "") {
+            itensComprados += integrante.descricaoItem1
+        }
+        if (integrante.descricaoItem2 != "") {
+            if (itensComprados != "") {
+                itensComprados += ", "
+            }
+            itensComprados += integrante.descricaoItem2
+        }
+        if (integrante.descricaoItem3 != "") {
+            if (itensComprados != "") {
+                itensComprados += ", "
+            }
+            itensComprados += integrante.descricaoItem3
+        }
+
+        holder.itensCompradosTv.setText(itensComprados)
+
         tib?.nomeTv?.setText(integrante.nome)
         tib?.pagouTv?.setText(integrante.pagou.toString())
+        tib?.itensCompradosTv?.setText(itensComprados)
         tib?.nomeTv?.text = integrante.nome
         tib?.pagouTv?.text = integrante.pagou.toString()
+        tib?.itensCompradosTv?.text = itensComprados
 
         return integranteTileView
     }
 
-    private data class TileIntegranteHolder(val nomeTv: TextView, val pagouTv: TextView)
+    private data class TileIntegranteHolder(val nomeTv: TextView, val pagouTv: TextView, val itensCompradosTv: TextView)
 }
